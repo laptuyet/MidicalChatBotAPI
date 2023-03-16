@@ -1,12 +1,15 @@
+from keras.models import load_model
+
+import json
 import pickle
 import random
-import json
-import numpy as np
 import string
+
 import nltk
+import numpy as np
+
 nltk.download('punkt')
 
-from keras.models import load_model
 
 intents = json.loads(open('./intents_vn.json', encoding='utf-8').read())
 
@@ -60,7 +63,6 @@ def get_response(intents_list, intents_json):
     except IndexError:
         result = "I don't understand"
     return result
-
 
 # stop = False
 # while not stop:
