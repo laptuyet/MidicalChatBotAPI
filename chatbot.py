@@ -1,12 +1,12 @@
-from keras.models import load_model
+
 
 import json
-import pickle
 import random
 import string
-
 import nltk
 import numpy as np
+import pickle
+import tensorflow as tf
 
 nltk.download('punkt')
 
@@ -15,8 +15,7 @@ intents = json.loads(open('./intents_vn.json', encoding='utf-8').read())
 
 words = pickle.load(open('./words.pkl', 'rb'))
 classes = pickle.load(open('./classes.pkl', 'rb'))
-model = load_model('./chatbot_model.h5')
-
+model = tf.keras.models.load_model('./chatbot_model.h5')
 
 # Remove punctuation
 def remove_punctuation(sentence):
