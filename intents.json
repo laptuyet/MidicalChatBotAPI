@@ -1,0 +1,223 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good afternoon",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?",
+        "Hi there! How may I help you?",
+        "Hey! What brings you here today?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Take care",
+        "Talk to you soon"
+      ],
+      "responses": [
+        "Goodbye! Take care.",
+        "Bye! Have a great day.",
+        "See you soon!",
+        "Stay healthy!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "symptoms",
+      "patterns": [
+        "What are the symptoms of COVID-19?",
+        "How do I know if I have the flu?",
+        "What are the signs of a heart attack?",
+        "What are the symptoms of a stroke?"
+      ],
+      "responses": [
+        "Common symptoms of COVID-19 include fever, cough, and shortness of breath. If you have flu-like symptoms such as fever, chills, sore throat, body aches, and fatigue, you may have the flu. Signs of a heart attack include chest pain, shortness of breath, and lightheadedness. Symptoms of a stroke include sudden numbness or weakness of the face, arm, or leg, especially on one side of the body, confusion, trouble speaking, and severe headache."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "treatment",
+      "patterns": [
+        "How is hypertension treated?",
+        "What are the treatment options for diabetes?",
+        "What is the best treatment for asthma?",
+        "How is depression treated?"
+      ],
+      "responses": [
+        "Treatment for hypertension includes lifestyle changes such as exercise and a healthy diet, as well as medications such as diuretics, ACE inhibitors, and calcium channel blockers. Treatment options for diabetes may include medications such as insulin, lifestyle changes, and blood sugar monitoring. Treatment for asthma may include bronchodilators, inhaled corticosteroids, and leukotriene modifiers. Depression can be treated with medications such as SSRIs, therapy, and lifestyle changes such as exercise and a healthy diet."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "medications",
+      "patterns": [
+        "What are the side effects of aspirin?",
+        "What is the correct dosage of ibuprofen?",
+        "What are the benefits of taking omega-3 supplements?",
+        "How does acetaminophen work?"
+      ],
+      "responses": [
+        "Common side effects of aspirin include stomach upset, nausea, and heartburn. The correct dosage of ibuprofen depends on various factors such as the person's weight and medical condition, and should be taken according to the instructions on the label. Omega-3 supplements may help reduce inflammation, lower triglycerides, and improve brain function. Acetaminophen works by blocking the production of certain chemicals in the body that cause pain and fever."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "diagnosis",
+      "patterns": [
+        "How is diabetes diagnosed?",
+        "What tests are used to diagnose heart disease?",
+        "How is cancer diagnosed?",
+        "How is Alzheimer's disease diagnosed?"
+      ],
+      "responses": [
+        "Diabetes can be diagnosed with a blood test to measure blood sugar levels. Tests used to diagnose heart disease may include an electrocardiogram (ECG), echocardiogram, or stress test. Cancer may be diagnosed through imaging tests such as X-rays, CT scans, or MRIs, as well as biopsies to examine tissue samples. Alzheimer's disease is typically diagnosed through a combination of cognitive tests, brain imaging, and medical history."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "vaccines",
+      "patterns": [
+        "How do vaccines work?",
+        "What are the side effects of the COVID-19 vaccine?",
+        "Do vaccines cause autism?",
+        "What vaccines are recommended for children?"
+      ],
+      "responses": [
+        "Vaccines work by stimulating the body's immune system to create antibodies against specific diseases, which helps to prevent infection. Common side effects of the COVID-19 vaccine include pain or swelling at the injection site, fever, and fatigue. There is no scientific evidence to support a link between vaccines and autism. The recommended vaccines for children include the measles, mumps, and rubella (MMR) vaccine, the chickenpox vaccine, and the polio vaccine, among others."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "What is anxiety?",
+        "What is depression?",
+        "What are some ways to manage stress?",
+        "How can I improve my mental health?"
+      ],
+      "responses": [
+        "Anxiety is a feeling of fear or unease that can range from mild to severe. Depression is a mood disorder that causes persistent feelings of sadness and loss of interest. Ways to manage stress include exercise, deep breathing, meditation, and spending time with loved ones. To improve your mental health, you can focus on self-care, seek support from friends and family, and consider therapy or medication if necessary."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "nutrition",
+      "patterns": [
+        "What are some healthy eating habits?",
+        "What diet plan do you recommend?",
+        "How can I manage my diabetes?",
+        "What foods should I avoid if I have high blood pressure?"
+      ],
+      "responses": [
+        "Some healthy eating habits include eating a balanced diet, consuming plenty of fruits and vegetables, and limiting processed foods. A personalized diet plan can be recommended by a nutritionist. Managing diabetes involves monitoring blood sugar levels and following a healthy meal plan. Limiting salt intake and increasing potassium-rich foods can help manage high blood pressure."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "exercise",
+      "patterns": [
+        "What physical activity do you recommend?",
+        "What exercise routine should I follow?",
+        "What are the benefits of exercise for arthritis?",
+        "What exercises are recommended for heart disease?"
+      ],
+      "responses": [
+        "A combination of aerobic and strength-training exercises is recommended for overall health. Consult with a doctor or physical therapist for personalized exercise routines. Exercise can help reduce joint pain and stiffness for those with arthritis. Low-impact exercises such as walking, cycling, and swimming are recommended for those with heart disease."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "women's health",
+      "patterns": [
+        "What is a normal menstrual cycle?",
+        "How can I manage menopause symptoms?",
+        "What foods should I eat while pregnant?",
+        "What are the benefits of breastfeeding?"
+      ],
+      "responses": [
+        "A normal menstrual cycle is typically 28 days long. Menopause symptoms can be managed with hormone therapy or lifestyle changes such as regular exercise and a healthy diet. A balanced diet with plenty of fruits and vegetables, lean protein, and whole grains is important during pregnancy. Breastfeeding can provide many benefits for both the mother and baby, including reducing the risk of infections and promoting bonding."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "men's health",
+      "patterns": [
+        "What are the risk factors for prostate cancer?",
+        "What are the treatment options for erectile dysfunction?",
+        "What are some ways to improve male fertility?"
+      ],
+      "responses": [
+        "Risk factors for prostate cancer include age, family history, and race. Treatment options for erectile dysfunction include medication, therapy, and lifestyle changes. Quitting smoking and reducing alcohol and drug use can help improve male fertility."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "substance abuse",
+      "patterns": [
+        "How can I overcome addiction?",
+        "What are the treatment options for alcohol abuse?",
+        "What are some recovery resources for drug addiction?"
+      ],
+      "responses": [
+        "Overcoming addiction involves a combination of therapy, medication, and support from loved ones. Treatment options for alcohol abuse include therapy, medication, and support groups such as Alcoholics Anonymous. Recovery resources for drug addiction include rehab programs, support groups, and counseling services."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "chronic illness",
+      "patterns": [
+        "How can I manage my cancer symptoms?",
+        "What are some treatment options for HIV/AIDS?",
+        "What are some ways to manage chronic pain?"
+      ],
+      "responses": [
+        "Managing cancer symptoms can involve a combination of chemotherapy, radiation therapy, and pain management. Treatment options for HIV/AIDS include antiretroviral therapy and medication to prevent infections. Managing chronic pain can involve a combination of medication, physical therapy, and lifestyle changes."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "aging",
+      "patterns": [
+        "What are some tips for healthy aging?",
+        "How can I stay active as I age?",
+        "What are some age-related health concerns I should be aware of?",
+        "How can I maintain my cognitive function as I get older?"
+      ],
+      "responses": [
+        "Some tips for healthy aging include staying active, eating a balanced diet, getting enough sleep, and staying socially engaged.",
+        "Staying active can help improve balance, flexibility, and overall physical health. Consider activities like walking, swimming, or yoga.",
+        "Age-related health concerns may include conditions like arthritis, osteoporosis, or vision and hearing loss. Talk to your healthcare provider about screening tests and preventative measures.",
+        "To maintain cognitive function, try activities like reading, doing puzzles, or learning new skills. Social engagement and regular exercise can also help improve brain health."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "sleep",
+      "patterns": [
+        "How much sleep do I need?",
+        "What are some tips for improving sleep quality?",
+        "What are some common sleep disorders?",
+        "How does sleep affect overall health?"
+      ],
+      "responses": [
+        "Most adults need 7-9 hours of sleep per night.",
+        "Tips for improving sleep quality include establishing a regular sleep schedule, creating a relaxing bedtime routine, avoiding screens before bed, and keeping your bedroom cool, dark, and quiet.",
+        "Common sleep disorders include insomnia, sleep apnea, restless leg syndrome, and narcolepsy. Consult a healthcare provider if you suspect you have a sleep disorder.",
+        "Sleep plays a crucial role in overall health, including physical and mental health. Lack of sleep has been linked to an increased risk of chronic conditions like diabetes, obesity, and heart disease, as well as cognitive decline and mental health issues."
+      ],
+      "context_set": ""
+    }
+  ]
+}

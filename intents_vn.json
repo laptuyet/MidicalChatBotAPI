@@ -1,0 +1,224 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Xin chào",
+        "Chào bạn",
+        "Chào buổi sáng",
+        "Chào buổi chiều",
+        "Chào buổi tối",
+        "Xin chào, tôi có thể giúp gì cho bạn?"
+      ],
+      "responses": [
+        "Xin chào, chào mừng bạn đến với trung tâm y tế của chúng tôi. Tôi có thể giúp gì cho bạn?",
+        "Chào bạn, tôi là một trợ lý ảo y tế. Tôi có thể giúp gì cho bạn?",
+        "Xin chào, chúc một ngày tốt lành. Tôi có thể giúp bạn tìm kiếm thông tin về sức khỏe không?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "symptoms",
+      "patterns": [
+        "Tôi bị đau đầu",
+        "Tôi đau bụng",
+        "Tôi ho",
+        "Tôi sốt",
+        "Tôi mệt mỏi",
+        "Tôi bị chóng mặt"
+      ],
+      "responses": [
+        "Bạn có thể cho tôi biết thêm về triệu chứng của bạn được không?",
+        "Triệu chứng này có thể liên quan đến một số bệnh khác nhau. Bạn có thể cho tôi biết thêm về triệu chứng của bạn được không?",
+        "Hãy nói cho tôi biết thêm về triệu chứng của bạn. Tôi sẽ cố gắng giúp bạn tìm hiểu rõ hơn về sức khỏe của mình."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "diagnosis",
+      "patterns": [
+        "Tôi nghĩ mình bị cảm",
+        "Tôi có thể bị viêm họng không?",
+        "Tôi nghĩ mình bị tiểu đường",
+        "Tôi có thể bị bệnh tim không?",
+        "Tôi đang lo lắng về sức khỏe của mình"
+      ],
+      "responses": [
+        "Tôi hiểu bạn đang lo lắng về sức khỏe của mình. Tuy nhiên, tôi khuyên bạn nên đến bệnh viện để được khám bệnh và chẩn đoán chính xác hơn.",
+        "Triệu chứng của bạn có thể liên quan đến nhiều bệnh khác nhau. Bạn nên đến bệnh viện để được khám bệnh và chẩn đoán chính xác hơn.",
+        "Tôi không thể chẩđoán bệnh của bạn một cách chính xác. Tốt nhất là bạn nên đến bệnh viện để được khám bệnh và tìm hiểu rõ hơn về tình trạng sức khỏe của mình."
+      ],
+      "context_set": ""
+      },
+      {
+      "tag": "treatment",
+      "patterns": [
+      "Tôi cần uống thuốc gì?",
+      "Tôi có thể tự chữa trị không?",
+      "Tôi cần phải điều trị như thế nào?",
+      "Tôi có nên đi khám bác sĩ không?",
+      "Tôi cần phải làm gì để chữa bệnh của mình?"
+      ],
+      "responses": [
+      "Việc điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị.",
+      "Bạn không nên tự chữa trị. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
+      "Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự chữa trị có thể dẫn đến hậu quả nghiêm trọng.",
+      "Điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
+      "Tôi khuyên bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự điều trị có thể gây hậu quả nghiêm trọng cho sức khỏe của bạn."
+      ],
+      "context_set": ""
+      },
+      {
+      "tag": "thankyou",
+      "patterns": [
+      "Cảm ơn",
+      "Cảm ơn bạn",
+      "Cảm ơn rất nhiều",
+      "Tôi cảm ơn",
+      "Tks",
+      "Thank you"
+      ],
+      "responses": [
+      "Không có gì, tôi rất vui khi được hỗ trợ bạn.",
+      "Tôi luôn sẵn sàng giúp đỡ bạn. Nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi.",
+      "Rất vui khi tôi có thể giúp bạn. Hãy chăm sóc sức khỏe của mình và nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi."
+      ],
+      "context_set": ""
+      },
+      {
+        "tag": "symptoms",
+        "patterns": [
+          "Tôi thấy đau đầu",
+          "Tôi bị sốt",
+          "Tôi thấy khó thở",
+          "Tôi thấy mệt mỏi",
+          "Tôi bị đau bụng",
+          "Tôi bị đau lưng",
+          "Tôi thấy đau ngực",
+          "Tôi bị ho",
+          "Tôi bị tiểu đêm nhiều lần"
+        ],
+        "responses": [
+          "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều bệnh khác nhau. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
+          "Tôi hiểu rằng bạn đang gặp vấn đề với sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+          "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh nguy hiểm. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
+          "Tôi hiểu rằng bạn đang lo lắng về sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+          "Các triệu chứng mà bạn đang gặp phải có thể là dấu hiệu của một số bệnh. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "medication",
+        "patterns": [
+          "Tôi đang dùng thuốc gì?",
+          "Tôi cần phải dùng thuốc gì?",
+          "Thuốc gì có thể giúp tôi?",
+          "Tôi có thể dùng thuốc gì để giảm đau?",
+          "Tôi cần phải mua thuốc ở đâu?",
+          "Tôi không biết dùng thuốc thế nào?",
+          "Tôi cần uống thuốc trong bao lâu?"
+        ],
+        "responses": [
+          "Việc sử dụng thuốc phải tuân thủ theo chỉ dẫn của bác sĩ. Tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc. Bác sĩ sẽ chỉ định loại thuốc phù hợp với tình trạng sức khỏe của bạn và hướng dẫn bạn cách sử dụng thuốc đúng cách.",
+          "Tôi không thể tư vấn về việc sử dụng thuốc cụ thể. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc phù hợp với tình trạng sức khỏe của bạn.",
+          "Tôi không thể tư vấn về việc sử dụng thuốc. Tuy nhiên, tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách và theo chỉ định của bác sĩ.",
+          "Việc sử dụng thuốc phải tuân thủ theo hướng dẫn của bác sĩ. Tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách.",
+          "Tôi hiểu rằng bạn cần biết về thuốc để điều trị tình trạng sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về loại thuốc phù hợp và cách sử dụng thuốc đúng cách.",
+          "Tôi không thể tư vấn về việc sử dụng thuốc cụ thể. Tuy nhiên, tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách và theo chỉ định của bác sĩ."
+          ],
+          "context_set": ""
+          },
+          {
+          "tag": "mental_health",
+          "patterns": [
+          "Tôi cảm thấy lo lắng",
+          "Tôi bị rối loạn lo âu",
+          "Tôi bị trầm cảm",
+          "Tôi bị căng thẳng",
+          "Tôi bị chứng hoảng loạn",
+          "Tôi không ngủ được",
+          "Tôi cảm thấy mệt mỏi suốt ngày",
+          "Tôi bị stress"
+          ],
+          "responses": [
+          "Các triệu chứng của bạn có thể là dấu hiệu của rối loạn tâm lý. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về việc điều trị rối loạn tâm lý.",
+          "Tôi hiểu rằng bạn đang gặp vấn đề về tâm lý. Tốt nhất là bạn nên đến bác sĩ tâm lý để được khám và tư vấn về việc điều trị rối loạn tâm lý.",
+          "Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về cách điều trị các triệu chứng của bạn.",
+          "Rối loạn tâm lý là một vấn đề nghiêm trọng và bạn nên đến bác sĩ tâm lý để được khám và tư vấn về cách điều trị.",
+          "Các triệu chứng của bạn có thể là dấu hiệu của các vấn đề tâm lý nghiêm trọng hơn. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về cách điều trị các vấn đề tâm lý của bạn.",
+          "Tôi hiểu rằng bạn đang gặp khó khăn với tâm lý của mình. Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về việc điều trị các triệu chứng của bạn.",
+          "Rối loạn tâm lý là một vấn đề nghiêm trọng và cần được giải quyết bằng cách tham khảo ý kiến ​​bác sĩ tâm lý. Tôi khuyên bạn nên đến bác sĩ để được khám và tư vấn về cách điều trị các vấn đề tâm lý của bạn."
+          ],
+          "context_set": ""
+          },
+          {
+          "tag": "symptoms",
+          "patterns": [
+          "Tôi bị đau đầu",
+          "Tôi đau bụng",
+          "Tôi bị sốt",
+          "Tôi bị đau họng",
+          "Tôi bị đau răng",
+          "Tôi bị ho",
+          "Tôi thấy khó thở",
+          "Tôi bị đau lưng"
+          ],
+          "responses": [
+          "Các triệu chứng của bạn có thể là dấu hiệu của một số vấn đề sức khỏe. Tốt nhất là bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác về tình trạng sức khỏe của bạn.",
+          "Tôi khuyên bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn. Bác sĩ sẽ chỉ định phương pháp điều trị phù hợp nhất với tình trạng sức khỏe của bạn.",
+          "Bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về các triệu chứng của bạn. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với tình trạng sức khỏe của bạn.",
+          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều vấn đề sức khỏe khác nhau. Tốt nhất là bạn nên đến bác sĩ để được khám và tìm hiểu chính xác về tình trạng sức khỏe của mình.",
+          "Đau đầu, đau bụng, sốt, đau họng, đau răng, ho, khó thở và đau lưng đều có thể là các triệu chứng của nhiều vấn đề sức khỏe khác nhau. Tôi khuyên bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn.",
+          "Bạn nên tham khảo ý kiến ​​bác sĩ để được khám và tìm hiểu chính xác về tình trạng sức khỏe của mình. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với các triệu chứng của bạn.",
+          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều vấn đề sức khỏe khác nhau. Tốt nhất là bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn, và bác sĩ sẽ đưa ra các giải pháp điều trị phù hợp với từng trường hợp cụ thể.",
+          "Tôi khuyên bạn nên đến bác sĩ để được khám và tìm hiểu chính xác về các triệu chứng của mình. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với từng trường hợp cụ thể."
+          ],
+          "context_set": ""
+          },
+          {
+          "tag": "medication",
+          "patterns": [
+          "Tôi cần uống thuốc",
+          "Tôi cần mua thuốc",
+          "Tôi không biết uống loại thuốc gì",
+          "Tôi đã uống thuốc nhưng không hiệu quả",
+          "Tôi muốn hỏi về thuốc"
+          ],
+          "responses": [
+          "Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
+          "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể.",
+          "Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
+          "Nếu bạn không biết sử dụng loại thuốc nào thì tốt nhất là nên đến bác sĩ để được tư vấn và đưa ra chỉ định phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn.",
+          "Tôi khuyên bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn.",
+          "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn."
+          ],
+          "context_set": ""
+          },
+          {
+          "tag": "appointment",
+          "patterns": [
+          "Làm thế nào để đặt lịch hẹn?",
+          "Tôi muốn đặt lịch khám bệnh",
+          "Làm sao để hẹn khám bệnh?",
+          "Tôi cần đặt lịch hẹn khám bệnh",
+          "Làm thế nào để đăng ký khám bệnh?",
+          "Tôi muốn hẹn khám với bác sĩ"
+          ],
+          "responses": [
+          "Bạn có thể đặt lịch hẹn trực tuyến hoặc gọi đến tổng đài của bệnh viện. Trong trường hợp khẩn cấp, bạn có thể đến ngay bệnh viện để được xử lý ngay lập tức.",
+          "Bạn có thể đặt lịch hẹn bằng cách gọi điện thoại hoặc đến trực tiếp tại phòng khám của bác sĩ. Nếu cần khám trong tình huống khẩn cấp, bạn có thể đến ngay bệnh viện để được cấp cứu.",
+          "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi đến tổng đài của bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
+          "Bạn có thể đến trực tiếp phòng khám của bác sĩ để đặt lịch hẹn hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu.",
+          "Bạn có thể đặt lịch hẹn khám bệnh trực tuyến hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
+          "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi điện thoại đến bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu."
+          ],
+          "context_set": ""
+          }
+  ]
+}
+          
+          
+          
+          
+      
