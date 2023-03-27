@@ -7,218 +7,381 @@
         "Chào bạn",
         "Chào buổi sáng",
         "Chào buổi chiều",
-        "Chào buổi tối",
-        "Xin chào, tôi có thể giúp gì cho bạn?"
+        "Chào buổi tối"
       ],
       "responses": [
-        "Xin chào, chào mừng bạn đến với trung tâm y tế của chúng tôi. Tôi có thể giúp gì cho bạn?",
         "Chào bạn, tôi là một trợ lý ảo y tế. Tôi có thể giúp gì cho bạn?",
-        "Xin chào, chúc một ngày tốt lành. Tôi có thể giúp bạn tìm kiếm thông tin về sức khỏe không?"
+        "Xin chào, chúc một ngày tốt lành. Tôi có thể giúp bạn tìm kiếm thông tin về sức khỏe không?",
+        "Xin chào, làn gió nào mang bạn đến đây?",
+        "Xin chào, tôi là lang băm công nghệ"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "headache",
+      "patterns": [
+        "Tôi bị đau đầu",
+        "Tôi muốn biết cách giảm đau đầu tức thì",
+        "Đầu tôi hơi nhức",
+        "Tôi phải làm gì khi đau đầu",
+        "Tôi đang bị đau đầu. Đây có phải là triệu chứng của bệnh gì không"
+      ],
+      "responses": [
+        "Bạn nên nghỉ ngơi và uống nhiều nước",
+        "Bạn nên gặp bác sĩ",
+        "Đau đầu có thể là triệu chứng của nhiều bệnh, bao gồm đau đầu căng thẳng, bệnh cảm cúm hoặc bệnh dạ dày. Tốt nhất bạn nên đến gặp bác sĩ để được khám và chẩn đoán chính xác"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "fever",
+      "patterns": [
+        "Tôi có triệu chứng sốt",
+        "Thân nhiệt của tôi cao hơn bình thường",
+        "Toàn thân của tôi rất nóng"
+      ],
+      "responses": [
+        "Bạn nên đo thân nhiệt của mình để kiểm tra có sốt không.",
+        "Bạn có thể thử áp dụng những biện pháp đơn giản như massage, nghỉ ngơi và sử dụng thuốc giảm đau để giảm đau đầu tức thì. Tuy nhiên, nếu tình trạng kéo dài hoặc tăng nặng, bạn nên đến bác sĩ để được khám và chữa trị kịp thời.",
+        "Bạn nên uống thuốc hạ sốt",
+        "Bạn nên tắm nước nóng tránh bị cảm lạnh"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stifling",
+      "patterns": [
+        "Tôi cảm thấy khó thở",
+        "Tôi cảm thấy tức ngực",
+        "Tôi không thể thở bình thường"
+      ],
+      "responses": [
+        "Bạn nên đến bệnh viện gần nhất để được kiểm tra và điều trị",
+        "Bạn nên nhờ người thân trợ giúp",
+        "Trong một số trường hợp, khó thở được coi là hiện tượng bình thường. Đó là lúc bạn tập thể dục quá sức, leo núi/leo cầu thang quá nhiều hoặc làm việc nặng trong thời gian dài mà không nghỉ ngơi. Tình trạng này sẽ tự hết sau khi bạn ngưng các hoạt động thể chất kể trên. Tuy nhiên, nếu tình trạng xảy ra với tần suất liên tục mà không phải do vận động gắng sức, rất có thể bạn đang bị một bệnh lý nào đó.",
+        "Khó thở, hụt hơi có thể là dấu hiệu của rất nhiều bệnh lý liên quan đến hệ hô hấp và tim mạch. Vì vậy nếu bạn đang gặp phải tình trạng khó thở bất thường và kéo dài thì cần đến ngay bệnh viện để thăm khám."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "treatment",
+      "patterns": [
+        "Tôi cần uống thuốc gì?",
+        "Tôi có thể tự chữa trị không?",
+        "Tôi cần phải điều trị như thế nào?",
+        "Tôi có nên đi khám bác sĩ không?",
+        "Tôi cần phải làm gì để chữa bệnh của mình?"
+      ],
+      "responses": [
+        "Việc điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị.",
+        "Bạn không nên tự chữa trị. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
+        "Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự chữa trị có thể dẫn đến hậu quả nghiêm trọng.",
+        "Điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
+        "Tôi khuyên bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự điều trị có thể gây hậu quả nghiêm trọng cho sức khỏe của bạn."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "thankyou",
+      "patterns": [
+        "Cảm ơn",
+        "Cảm ơn bạn",
+        "Cảm ơn rất nhiều",
+        "Tôi cảm ơn",
+        "Thanks",
+        "Thank you"
+      ],
+      "responses": [
+        "Không có gì, tôi rất vui khi được hỗ trợ bạn.",
+        "Tôi luôn sẵn sàng giúp đỡ bạn. Nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi.",
+        "Rất vui khi tôi có thể giúp bạn. Hãy chăm sóc sức khỏe của mình và nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi."
       ],
       "context_set": ""
     },
     {
       "tag": "symptoms",
       "patterns": [
-        "Tôi bị đau đầu",
-        "Tôi đau bụng",
-        "Tôi ho",
-        "Tôi sốt",
-        "Tôi mệt mỏi",
-        "Tôi bị chóng mặt"
+        "Tôi thấy đau đầu",
+        "Tôi bị sốt",
+        "Tôi thấy khó thở",
+        "Tôi thấy mệt mỏi",
+        "Tôi bị đau bụng",
+        "Tôi bị đau lưng",
+        "Tôi thấy đau ngực",
+        "Tôi bị ho",
+        "Tôi bị tiểu đêm nhiều lần"
       ],
       "responses": [
-        "Bạn có thể cho tôi biết thêm về triệu chứng của bạn được không?",
-        "Triệu chứng này có thể liên quan đến một số bệnh khác nhau. Bạn có thể cho tôi biết thêm về triệu chứng của bạn được không?",
-        "Hãy nói cho tôi biết thêm về triệu chứng của bạn. Tôi sẽ cố gắng giúp bạn tìm hiểu rõ hơn về sức khỏe của mình."
+        "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+        "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều bệnh khác nhau. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
+        "Tôi hiểu rằng bạn đang gặp vấn đề với sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+        "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh nguy hiểm. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
+        "Tôi hiểu rằng bạn đang lo lắng về sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
+        "Các triệu chứng mà bạn đang gặp phải có thể là dấu hiệu của một số bệnh. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác."
       ],
       "context_set": ""
     },
     {
-      "tag": "diagnosis",
+      "tag": "mental_health",
       "patterns": [
-        "Tôi nghĩ mình bị cảm",
-        "Tôi có thể bị viêm họng không?",
-        "Tôi nghĩ mình bị tiểu đường",
-        "Tôi có thể bị bệnh tim không?",
-        "Tôi đang lo lắng về sức khỏe của mình"
+        "Tôi cảm thấy lo lắng",
+        "Tôi bị rối loạn lo âu",
+        "Tôi bị trầm cảm",
+        "Tôi bị căng thẳng",
+        "Tôi bị chứng hoảng loạn",
+        "Tôi không ngủ được",
+        "Tôi cảm thấy mệt mỏi suốt ngày",
+        "Tôi bị stress"
       ],
       "responses": [
-        "Tôi hiểu bạn đang lo lắng về sức khỏe của mình. Tuy nhiên, tôi khuyên bạn nên đến bệnh viện để được khám bệnh và chẩn đoán chính xác hơn.",
-        "Triệu chứng của bạn có thể liên quan đến nhiều bệnh khác nhau. Bạn nên đến bệnh viện để được khám bệnh và chẩn đoán chính xác hơn.",
-        "Tôi không thể chẩđoán bệnh của bạn một cách chính xác. Tốt nhất là bạn nên đến bệnh viện để được khám bệnh và tìm hiểu rõ hơn về tình trạng sức khỏe của mình."
+        "Các triệu chứng của bạn có thể là dấu hiệu của rối loạn tâm lý. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về việc điều trị rối loạn tâm lý.",
+        "Tôi hiểu rằng bạn đang gặp vấn đề về tâm lý. Tốt nhất là bạn nên đến bác sĩ tâm lý để được khám và tư vấn về việc điều trị rối loạn tâm lý.",
+        "Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về cách điều trị các triệu chứng của bạn.",
+        "Rối loạn tâm lý là một vấn đề nghiêm trọng và bạn nên đến bác sĩ tâm lý để được khám và tư vấn về cách điều trị.",
+        "Các triệu chứng của bạn có thể là dấu hiệu của các vấn đề tâm lý nghiêm trọng hơn. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về cách điều trị các vấn đề tâm lý của bạn.",
+        "Tôi hiểu rằng bạn đang gặp khó khăn với tâm lý của mình. Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về việc điều trị các triệu chứng của bạn.",
+        "Rối loạn tâm lý là một vấn đề nghiêm trọng và cần được giải quyết bằng cách tham khảo ý kiến ​​bác sĩ tâm lý. Tôi khuyên bạn nên đến bác sĩ để được khám và tư vấn về cách điều trị các vấn đề tâm lý của bạn."
       ],
       "context_set": ""
-      },
-      {
-      "tag": "treatment",
+    },
+    {
+      "tag": "medication",
       "patterns": [
-      "Tôi cần uống thuốc gì?",
-      "Tôi có thể tự chữa trị không?",
-      "Tôi cần phải điều trị như thế nào?",
-      "Tôi có nên đi khám bác sĩ không?",
-      "Tôi cần phải làm gì để chữa bệnh của mình?"
+        "Tôi cần uống thuốc",
+        "Tôi cần mua thuốc",
+        "Tôi không biết uống loại thuốc gì",
+        "Tôi đã uống thuốc nhưng không hiệu quả",
+        "Tôi muốn hỏi về thuốc"
       ],
       "responses": [
-      "Việc điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị.",
-      "Bạn không nên tự chữa trị. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
-      "Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự chữa trị có thể dẫn đến hậu quả nghiêm trọng.",
-      "Điều trị phụ thuộc vào loại bệnh của bạn. Tốt nhất là bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp.",
-      "Tôi khuyên bạn nên đến bác sĩ để được khám và được chỉ định điều trị phù hợp. Việc tự điều trị có thể gây hậu quả nghiêm trọng cho sức khỏe của bạn."
+        "Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
+        "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể.",
+        "Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
+        "Nếu bạn không biết sử dụng loại thuốc nào thì tốt nhất là nên đến bác sĩ để được tư vấn và đưa ra chỉ định phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn.",
+        "Tôi khuyên bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn.",
+        "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn."
       ],
       "context_set": ""
-      },
-      {
-      "tag": "thankyou",
+    },
+    {
+      "tag": "appointment",
       "patterns": [
-      "Cảm ơn",
-      "Cảm ơn bạn",
-      "Cảm ơn rất nhiều",
-      "Tôi cảm ơn",
-      "Tks",
-      "Thank you"
+        "Làm thế nào để đặt lịch hẹn?",
+        "Tôi muốn đặt lịch khám bệnh",
+        "Làm sao để hẹn khám bệnh?",
+        "Tôi cần đặt lịch hẹn khám bệnh",
+        "Làm thế nào để đăng ký khám bệnh?",
+        "Tôi muốn hẹn khám với bác sĩ"
       ],
       "responses": [
-      "Không có gì, tôi rất vui khi được hỗ trợ bạn.",
-      "Tôi luôn sẵn sàng giúp đỡ bạn. Nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi.",
-      "Rất vui khi tôi có thể giúp bạn. Hãy chăm sóc sức khỏe của mình và nếu bạn cần thêm thông tin gì, hãy liên hệ với tôi."
+        "Bạn có thể đặt lịch hẹn trực tuyến hoặc gọi đến tổng đài của bệnh viện. Trong trường hợp khẩn cấp, bạn có thể đến ngay bệnh viện để được xử lý ngay lập tức.",
+        "Bạn có thể đặt lịch hẹn bằng cách gọi điện thoại hoặc đến trực tiếp tại phòng khám của bác sĩ. Nếu cần khám trong tình huống khẩn cấp, bạn có thể đến ngay bệnh viện để được cấp cứu.",
+        "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi đến tổng đài của bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
+        "Bạn có thể đến trực tiếp phòng khám của bác sĩ để đặt lịch hẹn hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu.",
+        "Bạn có thể đặt lịch hẹn khám bệnh trực tuyến hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
+        "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi điện thoại đến bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu."
       ],
       "context_set": ""
-      },
-      {
-        "tag": "symptoms",
-        "patterns": [
-          "Tôi thấy đau đầu",
-          "Tôi bị sốt",
-          "Tôi thấy khó thở",
-          "Tôi thấy mệt mỏi",
-          "Tôi bị đau bụng",
-          "Tôi bị đau lưng",
-          "Tôi thấy đau ngực",
-          "Tôi bị ho",
-          "Tôi bị tiểu đêm nhiều lần"
-        ],
-        "responses": [
-          "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
-          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều bệnh khác nhau. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
-          "Tôi hiểu rằng bạn đang gặp vấn đề với sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
-          "Các triệu chứng của bạn có thể là dấu hiệu của một số bệnh nguy hiểm. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác.",
-          "Tôi hiểu rằng bạn đang lo lắng về sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được khám và xác định chính xác tình trạng sức khỏe của mình.",
-          "Các triệu chứng mà bạn đang gặp phải có thể là dấu hiệu của một số bệnh. Tôi khuyên bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "medication",
-        "patterns": [
-          "Tôi đang dùng thuốc gì?",
-          "Tôi cần phải dùng thuốc gì?",
-          "Thuốc gì có thể giúp tôi?",
-          "Tôi có thể dùng thuốc gì để giảm đau?",
-          "Tôi cần phải mua thuốc ở đâu?",
-          "Tôi không biết dùng thuốc thế nào?",
-          "Tôi cần uống thuốc trong bao lâu?"
-        ],
-        "responses": [
-          "Việc sử dụng thuốc phải tuân thủ theo chỉ dẫn của bác sĩ. Tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc. Bác sĩ sẽ chỉ định loại thuốc phù hợp với tình trạng sức khỏe của bạn và hướng dẫn bạn cách sử dụng thuốc đúng cách.",
-          "Tôi không thể tư vấn về việc sử dụng thuốc cụ thể. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc phù hợp với tình trạng sức khỏe của bạn.",
-          "Tôi không thể tư vấn về việc sử dụng thuốc. Tuy nhiên, tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách và theo chỉ định của bác sĩ.",
-          "Việc sử dụng thuốc phải tuân thủ theo hướng dẫn của bác sĩ. Tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách.",
-          "Tôi hiểu rằng bạn cần biết về thuốc để điều trị tình trạng sức khỏe của mình. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về loại thuốc phù hợp và cách sử dụng thuốc đúng cách.",
-          "Tôi không thể tư vấn về việc sử dụng thuốc cụ thể. Tuy nhiên, tôi khuyên bạn nên đến bác sĩ để được tư vấn về việc sử dụng thuốc đúng cách và theo chỉ định của bác sĩ."
-          ],
-          "context_set": ""
-          },
-          {
-          "tag": "mental_health",
-          "patterns": [
-          "Tôi cảm thấy lo lắng",
-          "Tôi bị rối loạn lo âu",
-          "Tôi bị trầm cảm",
-          "Tôi bị căng thẳng",
-          "Tôi bị chứng hoảng loạn",
-          "Tôi không ngủ được",
-          "Tôi cảm thấy mệt mỏi suốt ngày",
-          "Tôi bị stress"
-          ],
-          "responses": [
-          "Các triệu chứng của bạn có thể là dấu hiệu của rối loạn tâm lý. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về việc điều trị rối loạn tâm lý.",
-          "Tôi hiểu rằng bạn đang gặp vấn đề về tâm lý. Tốt nhất là bạn nên đến bác sĩ tâm lý để được khám và tư vấn về việc điều trị rối loạn tâm lý.",
-          "Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về cách điều trị các triệu chứng của bạn.",
-          "Rối loạn tâm lý là một vấn đề nghiêm trọng và bạn nên đến bác sĩ tâm lý để được khám và tư vấn về cách điều trị.",
-          "Các triệu chứng của bạn có thể là dấu hiệu của các vấn đề tâm lý nghiêm trọng hơn. Tôi khuyên bạn nên đến bác sĩ tâm lý để được khám và được tư vấn về cách điều trị các vấn đề tâm lý của bạn.",
-          "Tôi hiểu rằng bạn đang gặp khó khăn với tâm lý của mình. Bạn nên tham khảo ý kiến ​​bác sĩ tâm lý để được khám và tư vấn về việc điều trị các triệu chứng của bạn.",
-          "Rối loạn tâm lý là một vấn đề nghiêm trọng và cần được giải quyết bằng cách tham khảo ý kiến ​​bác sĩ tâm lý. Tôi khuyên bạn nên đến bác sĩ để được khám và tư vấn về cách điều trị các vấn đề tâm lý của bạn."
-          ],
-          "context_set": ""
-          },
-          {
-          "tag": "symptoms",
-          "patterns": [
-          "Tôi bị đau đầu",
-          "Tôi đau bụng",
-          "Tôi bị sốt",
-          "Tôi bị đau họng",
-          "Tôi bị đau răng",
-          "Tôi bị ho",
-          "Tôi thấy khó thở",
-          "Tôi bị đau lưng"
-          ],
-          "responses": [
-          "Các triệu chứng của bạn có thể là dấu hiệu của một số vấn đề sức khỏe. Tốt nhất là bạn nên đến bác sĩ để được khám và được chẩn đoán chính xác về tình trạng sức khỏe của bạn.",
-          "Tôi khuyên bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn. Bác sĩ sẽ chỉ định phương pháp điều trị phù hợp nhất với tình trạng sức khỏe của bạn.",
-          "Bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về các triệu chứng của bạn. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với tình trạng sức khỏe của bạn.",
-          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều vấn đề sức khỏe khác nhau. Tốt nhất là bạn nên đến bác sĩ để được khám và tìm hiểu chính xác về tình trạng sức khỏe của mình.",
-          "Đau đầu, đau bụng, sốt, đau họng, đau răng, ho, khó thở và đau lưng đều có thể là các triệu chứng của nhiều vấn đề sức khỏe khác nhau. Tôi khuyên bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn.",
-          "Bạn nên tham khảo ý kiến ​​bác sĩ để được khám và tìm hiểu chính xác về tình trạng sức khỏe của mình. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với các triệu chứng của bạn.",
-          "Các triệu chứng mà bạn đang mắc phải có thể là dấu hiệu của nhiều vấn đề sức khỏe khác nhau. Tốt nhất là bạn nên đến bác sĩ để được khám và chẩn đoán chính xác về tình trạng sức khỏe của bạn, và bác sĩ sẽ đưa ra các giải pháp điều trị phù hợp với từng trường hợp cụ thể.",
-          "Tôi khuyên bạn nên đến bác sĩ để được khám và tìm hiểu chính xác về các triệu chứng của mình. Bác sĩ sẽ đưa ra đánh giá và chỉ định phương pháp điều trị phù hợp với từng trường hợp cụ thể."
-          ],
-          "context_set": ""
-          },
-          {
-          "tag": "medication",
-          "patterns": [
-          "Tôi cần uống thuốc",
-          "Tôi cần mua thuốc",
-          "Tôi không biết uống loại thuốc gì",
-          "Tôi đã uống thuốc nhưng không hiệu quả",
-          "Tôi muốn hỏi về thuốc"
-          ],
-          "responses": [
-          "Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
-          "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể.",
-          "Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn. Tốt nhất là bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn.",
-          "Nếu bạn không biết sử dụng loại thuốc nào thì tốt nhất là nên đến bác sĩ để được tư vấn và đưa ra chỉ định phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn.",
-          "Tôi khuyên bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với tình trạng sức khỏe của bạn. Việc tự ý mua thuốc và sử dụng có thể gây hại cho sức khỏe của bạn.",
-          "Bạn nên đến bác sĩ để được tư vấn về cách sử dụng thuốc đúng cách và an toàn. Bác sĩ sẽ đưa ra chỉ định về loại thuốc, liều lượng và thời gian sử dụng phù hợp với từng trường hợp cụ thể. Việc sử dụng thuốc không đúng cách có thể gây hại cho sức khỏe của bạn."
-          ],
-          "context_set": ""
-          },
-          {
-          "tag": "appointment",
-          "patterns": [
-          "Làm thế nào để đặt lịch hẹn?",
-          "Tôi muốn đặt lịch khám bệnh",
-          "Làm sao để hẹn khám bệnh?",
-          "Tôi cần đặt lịch hẹn khám bệnh",
-          "Làm thế nào để đăng ký khám bệnh?",
-          "Tôi muốn hẹn khám với bác sĩ"
-          ],
-          "responses": [
-          "Bạn có thể đặt lịch hẹn trực tuyến hoặc gọi đến tổng đài của bệnh viện. Trong trường hợp khẩn cấp, bạn có thể đến ngay bệnh viện để được xử lý ngay lập tức.",
-          "Bạn có thể đặt lịch hẹn bằng cách gọi điện thoại hoặc đến trực tiếp tại phòng khám của bác sĩ. Nếu cần khám trong tình huống khẩn cấp, bạn có thể đến ngay bệnh viện để được cấp cứu.",
-          "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi đến tổng đài của bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
-          "Bạn có thể đến trực tiếp phòng khám của bác sĩ để đặt lịch hẹn hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu.",
-          "Bạn có thể đặt lịch hẹn khám bệnh trực tuyến hoặc gọi điện thoại đến bệnh viện để được hỗ trợ. Nếu cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được xử lý ngay lập tức.",
-          "Bạn có thể đặt lịch hẹn trực tuyến thông qua trang web của bệnh viện hoặc gọi điện thoại đến bệnh viện để được hỗ trợ đặt lịch. Nếu bạn cần khám trong tình huống khẩn cấp, bạn nên đến ngay bệnh viện để được cấp cứu."
-          ],
-          "context_set": ""
-          }
+    },
+    {
+      "tag": "diabetes",
+      "patterns": [
+        "Tôi muốn biết cách phòng ngừa bệnh tiểu đường",
+        "Tôi muốn biết cách kiểm soát lượng đường trong máu",
+        "Tôi muốn biết cách ăn uống hợp lý để giảm nguy cơ mắc bệnh tiểu đường",
+        "Tôi muốn biết thêm về triệu chứng của bệnh tiểu đường ",
+        "Bạn có thể giúp tôi tìm hiểu về loại thuốc điều trị tiểu đường nào tốt nhất không"
+      ],
+      "responses": [
+        "Để phòng ngừa bệnh tiểu đường, bạn nên tập thể dục thường xuyên, kiểm soát cân nặng, hạn chế tiêu thụ đường và thực phẩm có chứa tinh bột",
+        "Bạn nên đo lượng đường trong máu thường xuyên để kiểm soát bệnh tiểu đường và điều chỉnh chế độ ăn uống và thuốc điều trị nếu cần",
+        "Chế độ ăn uống hợp lý để giảm nguy cơ mắc bệnh tiểu đường bao gồm hạn chế tiêu thụ đường, tinh bột và chất béo, tăng cường ăn rau xanh, hoa quả và thực phẩm giàu chất xơ",
+        "Các triệu chứng của bệnh tiểu đường bao gồm mỏi mắt, đói thèm nước, thường xuyên đái tiểu và mệt mỏi. Nếu bạn có những triệu chứng này, nên đi khám bác sĩ để được chẩn đoán và điều trị kịp thời",
+        "Có nhiều loại thuốc điều trị tiểu đường như metformin, insulin và sulfonylureas. Tuy nhiên, tốt nhất là bạn nên tham khảo ý kiến ​​bác sĩ để được chỉ định cụ thể về loại thuốc phù hợp với tình trạng sức khỏe của bạn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "dental",
+      "patterns": ["Tôi muốn biết cách chăm sóc sức khỏe răng miệng"],
+      "responses": [
+        "Để chăm sóc sức khỏe răng miệng, bạn nên đánh răng đúng cách, sử dụng nước súc miệng và điều chỉnh chế độ ăn uống"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "cancer",
+      "patterns": [
+        "Tôi muốn biết cách phòng ngừa ung thư",
+        "Tôi muốn biết cách phát hiện sớm ung thư",
+        "Tôi muốn biết cách điều trị ung thư",
+        "Dấu hiệu của ung thư",
+        "Làm sao để tránh ung thư"
+      ],
+      "responses": [
+        "Để phòng ngừa ung thư, bạn nên ăn uống lành mạnh, tập thể dục thường xuyên, kiểm tra sức khỏe định kỳ và hạn chế tiếp xúc với chất độc hại",
+        "Để phát hiện sớm ung thư, bạn nên thực hiện kiểm tra sức khỏe định kỳ và kiểm tra ung thư định kỳ nếu có yếu tố nguy cơ",
+        "Để điều trị ung thư, phương pháp điều trị sẽ phụ thuộc vào loại ung thư và tình trạng sức khỏe của bệnh nhân, có thể bao gồm phẫu thuật, điều trị bằng thuốc hoặc phương pháp điều trị tế bào gốc"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "Tôi muốn biết cách chăm sóc sức khỏe tâm lý",
+        "Tôi muốn biết cách giảm stress",
+        "Tôi muốn biết cách xử lý cơn trầm cảm"
+      ],
+      "responses": [
+        "Để chăm sóc sức khỏe tâm lý, bạn nên tập trung vào tình bạn, gia đình, tình yêu và các hoạt động giải trí",
+        "Để giảm stress, bạn nên thực hành các bài tập thở, tập yoga hoặc tìm các hoạt động giải trí thú vị",
+        "Để xử lý cơn trầm cảm, bạn nên tham khảo ý kiến ​​chuyên gia và điều trị bằng phương pháp tâm lý hoặc thuốc theo chỉ định của bác sĩ"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "backache",
+      "patterns": ["Tôi muốn biết thêm về chứng đau lưng"],
+      "responses": [
+        "Chứng đau lưng có thể có nhiều nguyên nhân khác nhau, từ chấn thương, thoái hóa đốt sống, đến tình trạng tắc nghẽn dây thần kinh. Tốt nhất bạn nên đến gặp bác sĩ để được khám và chẩn đoán chính xác",
+        "Có nhiều phương pháp giảm đau tự nhiên, bao gồm tập thể dục, yoga, áp lực, massage, nhiệt độ và cắt giảm stress. Tuy nhiên, nếu triệu chứng của bạn không giảm sau khi sử dụng các phương pháp tự nhiên, hãy đến thăm bác sĩ để được tư vấn cụ thể về phương pháp giảm đau hiệu quả nhất cho bạn"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "blood_pressure",
+      "patterns": [
+        "Tôi muốn biết cách chăm sóc sức khỏe tâm lý",
+        "Tôi muốn biết cách giảm stress",
+        "Tôi muốn biết cách xử lý cơn trầm cảm"
+      ],
+      "responses": [
+        "Để chăm sóc sức khỏe tâm lý, bạn nên tập trung vào tình bạn, gia đình, tình yêu và các hoạt động giải trí",
+        "Để giảm stress, bạn nên thực hành các bài tập thở, tập yoga hoặc tìm các hoạt động giải trí thú vị",
+        "Để xử lý cơn trầm cảm, bạn nên tham khảo ý kiến ​​chuyên gia và điều trị bằng phương pháp tâm lý hoặc thuốc theo chỉ định của bác sĩ"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "heart",
+      "patterns": [
+        "Bạn có thể giải thích cho tôi về bệnh tim mạch không?",
+        "Tôi đang lo lắng về bệnh tim mạch của mình, bạn có thể giúp tôi không?",
+        "Các triệu chứng của bệnh tim mạch là gì?"
+      ],
+      "responses": [
+        "Bệnh tim mạch là bệnh lý về hệ thống tuần hoàn, bao gồm các bệnh lý như bệnh mạch vành, tim đập nhanh, tim đập chậm, tim bất thường, rối loạn nhịp tim và nhồi máu cơ tim.",
+        "Các triệu chứng bệnh tim mạch bao gồm đau ngực, khó thở, mệt mỏi, đau đầu và chóng mặt."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "heart_rate",
+      "patterns": [
+        "Nhịp tim bình thường của con người là bao nhiêu?",
+        "Nhịp tim trung bình của người"
+      ],
+      "responses": [
+        "Nhịp tim bình thường của một người trưởng thành là khoảng 60-100 nhịp/phút. Nhịp tim bình thường của trẻ em thường dao động từ 70 đến 100 nhịp/phút. Nhịp tim không ổn định có thể dẫn đến các vấn đề về sức khỏe, nhưng không phải lúc nào cũng nguy hiểm. Nếu bạn cảm thấy lo lắng, hãy tham khảo ý kiến của bác sĩ để được khám và tư vấn chính xác."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "heart_disease",
+      "patterns": [
+        "Bệnh tim là gì?",
+        "Có những loại bệnh tim nào?",
+        "Những triệu chứng nào cho thấy tôi có thể bị bệnh tim?",
+        "Tôi nên làm gì khi có triệu chứng của bệnh tim?",
+        "Tôi có thể chữa trị bệnh tim như thế nào?"
+      ],
+      "responses": [
+        "Bệnh tim là tình trạng bất thường về cơ tim hoặc hệ thống dẫn điện trong tim, gây ra các triệu chứng và vấn đề về sức khỏe.",
+        "Có nhiều loại bệnh tim, bao gồm bệnh van tim, bệnh màng tim, bệnh tăng nhĩ, bệnh suy tim, bệnh nhồi máu cơ tim và rối loạn nhịp tim.",
+        "Bệnh tim là một loại bệnh tật liên quan đến hệ thống tim mạch của cơ thể, bao gồm các vấn đề về nhịp tim, van tim, động mạch và tĩnh mạch. Bệnh tim có thể gây ra các biến chứng nghiêm trọng và có thể đe dọa tính mạng nếu không được chữa trị kịp thời.",
+        "Một số triệu chứng của bệnh tim có thể bao gồm đau thắt ngực, khó thở, mệt mỏi và chóng mặt."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "arrhythmia",
+      "patterns": [
+        "Rối loạn nhịp tim là gì?",
+        "Có những triệu chứng của rối loạn nhịp tim là gì?"
+      ],
+      "responses": [
+        "Rối loạn nhịp tim là tình trạng mà nhịp tim bị đánh giá là không bình thường, bao gồm quá nhanh, quá chậm hoặc không đều.",
+        "Các triệu chứng của rối loạn nhịp tim có thể bao gồm đau ngực, khó thở, mệt mỏi, hoa mắt và chóng mặt."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "myocardial_infarction",
+      "patterns": [
+        "Tôi đang có triệu chứng đau thắt ngực, có thể tôi bị nhồi máu cơ tim không?",
+        "Những nguyên nhân gây ra nhồi máu cơ tim là gì?",
+        "Tôi đã được chẩn đoán mắc bệnh nhồi máu cơ tim, liệu tôi có thể hồi phục hoàn toàn không?",
+        "Tôi có thể phòng ngừa nhồi máu cơ tim bằng cách nào?",
+        "Triệu chứng của nhồi máu cơ tim là gì?",
+        "Tôi nên làm gì khi bị nhồi máu cơ tim?",
+        "Những biện pháp cấp cứu khi bị nhồi máu cơ tim là gì?",
+        "Những yếu tố nguy cơ nào có thể dẫn đến bệnh nhồi máu cơ tim?",
+        "Tôi cần phải làm gì nếu tôi nghĩ mình đang bị nhồi máu cơ tim?",
+        "Có những phương pháp điều trị nào cho bệnh nhồi máu cơ tim?"
+      ],
+      "responses": [
+        "Nếu bạn đang có triệu chứng đau thắt ngực, hãy đến bệnh viện ngay lập tức để được khám và chẩn đoán bệnh tình của mình.",
+        "Các nguyên nhân gây ra nhồi máu cơ tim có thể bao gồm: tắc nghẽn động mạch, rối loạn nhịp tim, nhiễm trùng tim, và hút thuốc lá.",
+        "Tùy thuộc vào mức độ bệnh, nhưng hầu hết trường hợp nhồi máu cơ tim đều có thể hồi phục hoàn toàn bằng cách điều trị sớm và theo đúng chỉ định của bác sĩ.",
+        "Để phòng ngừa nhồi máu cơ tim, bạn nên duy trì một lối sống lành mạnh bao gồm ăn uống đầy đủ chất dinh dưỡng, tập luyện thể dục đều đặn, giảm stress và kiểm soát các yếu tố nguy cơ khác như huyết áp cao và tiểu đường.",
+        "Triệu chứng của nhồi máu cơ tim có thể bao gồm đau thắt ngực, khó thở, mệt mỏi, buồn nôn và đau cổ tay, cẳng tay, lưng hoặc hàm.",
+        "Nếu bạn bị nhồi máu cơ tim, hãy đến bệnh viện ngay lập tức hoặc gọi điện cho cấp cứu để được xử lý kịp thời.",
+        "Có nhiều phương pháp điều trị cho bệnh nhồi máu cơ tim bao gồm: thuốc giảm đau, thuốc giãn mạch, thuốc trợ tim, hoặc phẫu thuật thay van tim. Tùy vào tình trạng bệnh của từng người mà bác sĩ sẽ chỉ định phương pháp điều trị phù hợp."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "spo2",
+      "patterns": [
+        "Nồng độ SpO2 là gì?",
+        "Tôi cần biết về nồng độ SpO2",
+        "Thông tin về nồng độ SpO2"
+      ],
+      "responses": [
+        "Nồng độ SpO2 là chỉ số đo lường nồng độ oxy trong máu. Nó được đo bằng máy đo SpO2 thông qua cảm biến gắn trên ngón tay hoặc tai. Để đo nồng độ SpO2, bạn cần sử dụng máy đo SpO2 và gắn cảm biến lên ngón tay hoặc tai. Khi máy hoạt động, nó sẽ đo lường nồng độ oxy trong máu và hiển thị kết quả trên màn hình máy. Nồng độ SpO2 bình thường là từ 95% đến 100%. Nếu nồng độ SpO2 dưới 95%, đó có thể là tín hiệu cho thấy cơ thể bạn không đủ oxy. Nếu nồng độ SpO2 dưới 90%, bạn cần đến bệnh viện ngay lập tức để điều trị. Nồng độ SpO2 thấp có thể do nhiều nguyên nhân như bị đau, bị khó thở, bị suy tim, bị suy giảm chức năng phổi, hoặc bị ngừng thở tạm thời. Tùy thuộc vào nguyên nhân cụ thể mà bác sĩ sẽ chỉ định phương pháp điều trị phù hợp Có nhiều cách để tăng nồng độ SpO2 bao gồm: hít thở từ máy oxy, tăng tần suất thở, tập thể dục để tăng cường sức khỏe phổi và cải thiện tuần hoàn máu, hoặc điều trị bệnh gây ra nồng độ SpO2 thấp. Tuy nhiên, bạn nên tham khảo ý kiến của bác sĩ trước khi thực hiện bất kỳ phương pháp nào."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "covid-symptom",
+      "patterns": ["Triệu chứng của bệnh COVID là gì?"],
+      "responses": [
+        "Bệnh Covid-19 xảy ra do nhiễm phải virus SARS-CoV-2, gây ra nhiều tình trạng về bệnh hô hấp, các biến thể mới không ngừng được phát hiện. Mỗi biến thể của virus Covid-19 lại gây ra bệnh cảnh với các triệu chứng khác nhau, điển hình là sốt, ho khan, cơ thể mệt mỏi"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "blood-donation-regulations",
+      "patterns": ["Quy định để hiến máu nhân đạo là gì?"],
+      "responses": [
+        "Cân nặng ít nhất là 42kg đối với phụ nữ, 45kg đối với nam giới.",
+        "Lượng máu hiến mỗi lần không quá 9ml/kg cân nặng và không quá 500ml mỗi lần.",
+        "Không bị nhiễm hoặc không có các hành vi lây nhiễm HIV và các bệnh lây nhiễm qua đường truyền máu khác",
+        "Thời gian giữa 2 lần hiến máu là 12 tuần đối với cả Nam và Nữ"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "immune_system",
+      "patterns": [
+        "Hệ miễn dịch là gì?",
+        "Thông tin về hệ miễn dịch",
+        "Tôi cần biết về hệ miễn dịch?"
+      ],
+      "responses": [
+        "Là một thống phòng thủ tự nhiên của con người. Đây cũng là một mạng lưới vô cùng phức tạp của các tế bào, các mô và những cơ quan kết hợp lại với nhau nhằm bảo vệ cơ thể bạn tránh khỏi sự xâm nhập của các loại vi khuẩn và virus gây bệnh"
+      ],
+      "context_set": ""
+    }
   ]
 }
-          
-          
-          
-          
-      
