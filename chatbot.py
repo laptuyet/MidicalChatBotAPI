@@ -83,12 +83,12 @@ def get_response(intents_list, intents_json):
         result = "I don't understand"
     return result
 
-stop = False
-while not stop:
-    message = input("Enter message: ")
-    if message in ['end', 'stop']:
-        stop = True
-    else:
-        pred_intents = predict_class(message)
-        res = get_response(pred_intents, intents)
-        print(res)
+# stop = False
+# while not stop:
+#     message = input("Enter message: ")
+#     if message in ['end', 'stop']:
+#         stop = True
+#     else:
+#         pred_intents = predict_class(message)
+#         res = get_response(pred_intents, intents)
+#         print(res)
