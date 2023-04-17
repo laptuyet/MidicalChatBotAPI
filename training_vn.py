@@ -31,7 +31,7 @@ documents = []
 
 def remove_stop_word_from_pattern(sentence):
     for sw in stop_words:
-        if ' ' + sw + ' ' in pattern:
+        if ' ' + sw + ' ' in sentence:
             sentence = sentence.replace(sw, '')
     return sentence
 

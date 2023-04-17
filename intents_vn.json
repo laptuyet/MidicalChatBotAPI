@@ -18,6 +18,21 @@
       "context_set": ""
     },
     {
+      "tag": "farewell",
+      "patterns": [
+        "Bye",
+        "Bye bye",
+        "Tạm biệt",
+        "Chào tạm biệt",
+        "Goodbye"
+      ],
+      "responses": [
+        "Tạm biệt bạn, rất vui được giúp đỡ bạn",
+        "Chào tạm biệt, nếu có vấn đề gì cứ hỏi tôi nhé!"
+      ],
+      "context_set": ""
+    },
+    {
       "tag": "headache",
       "patterns": [
         "Tôi bị đau đầu",
@@ -380,6 +395,36 @@
       ],
       "responses": [
         "Là một thống phòng thủ tự nhiên của con người. Đây cũng là một mạng lưới vô cùng phức tạp của các tế bào, các mô và những cơ quan kết hợp lại với nhau nhằm bảo vệ cơ thể bạn tránh khỏi sự xâm nhập của các loại vi khuẩn và virus gây bệnh"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "low_bpm",
+      "patterns": [
+        "low_bpm"
+      ],
+      "responses": [
+        "Nhịp tin của bạn hơi thấp. Nhịp tim chậm có thể xem là sinh lý ở những người là vận động viên, tập luyện thể dục thể thao thường xuyên nhưng đôi khi có thể là bệnh lý. Tình trạng này sẽ khiến cung lượng tim bị giảm, máu tưới lên não và những cơ quan khác cũng bị giảm  khiến cơ thể bị mệt mỏi, suy tim, không thể gắng sức, thậm chí bị ngất và đột tử."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "normal_bpm",
+      "patterns": [
+        "normal_bpm"
+      ],
+      "responses": [
+        "Nhịp tim của bạn hiện đang ở mức bình thường, hãy cố gắng duy trì chế độ ăn lành mạnh, tập thể dục, ngủ đủ giấc... nhé!"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "high_bpm",
+      "patterns": [
+        "high_bpm"
+      ],
+      "responses": [
+        "Nhịp tim của bạn có vẻ hơi cao. Hãy chú ý giữ sức khỏe đi nhé!"
       ],
       "context_set": ""
     }

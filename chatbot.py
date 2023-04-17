@@ -1,5 +1,4 @@
 
-
 import json
 import random
 import string
@@ -17,14 +16,35 @@ words = pickle.load(open('./words.pkl', 'rb'))
 classes = pickle.load(open('./classes.pkl', 'rb'))
 model = tf.keras.models.load_model('./chatbot_model.h5')
 
+
 # Remove punctuation
 def remove_punctuation(sentence):
     sentence = sentence.translate(str.maketrans('', '', string.punctuation))
     return sentence
 
 
+def get_stopwords_list(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        stopwords = f.readlines()
+        stopwords = [sw.strip() for sw in stopwords]
+        return stopwords
+
+
+# Load stop words
+stop_word_file_path = './vietnamese_stop_words.txt'
+stop_words = get_stopwords_list(stop_word_file_path)
+
+
+def remove_stop_word_from_pattern(sentence):
+    for sw in stop_words:
+        if ' ' + sw + ' ' in sentence:
+            sentence = sentence.replace(sw, '')
+    return sentence
+
+
 def clean_up_sentence(sentence):
     sentence = remove_punctuation(sentence)
+    sentence = remove_stop_word_from_pattern(sentence)
     sentence_words = nltk.word_tokenize(sentence)
     return sentence_words
 
@@ -63,12 +83,12 @@ def get_response(intents_list, intents_json):
         result = "I don't understand"
     return result
 
-# stop = False
-# while not stop:
-#     message = input("Enter message: ")
-#     if message in ['end', 'stop']:
-#         stop = True
-#     else:
-#         pred_intents = predict_class(message)
-#         res = get_response(pred_intents, intents)
-#         print(res)
+stop = False
+while not stop:
+    message = input("Enter message: ")
+    if message in ['end', 'stop']:
+        stop = True
+    else:
+        pred_intents = predict_class(message)
+        res = get_response(pred_intents, intents)
+        print(res)
