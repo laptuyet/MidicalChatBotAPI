@@ -428,6 +428,36 @@
         "Nhịp tim của bạn có vẻ hơi cao. Hãy chú ý giữ sức khỏe đi nhé!"
       ],
       "context_set": ""
+    },
+    {
+      "tag": "normal_spo2",
+      "patterns": [
+        "normal_spo2"
+      ],
+      "responses": [
+        "Đây là mức SpO2 bình thường và cho thấy huyết oxy trong máu là đủ để cung cấp năng lượng cho các hoạt động cơ bản của cơ thể."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "warn_spo2",
+      "patterns": [
+        "warn_spo2"
+      ],
+      "responses": [
+        "Mức SpO2 này có thể được coi là bình thường trong một số tình huống, nhưng cần chú ý hơn. Nếu mức SpO2 này được duy trì trong thời gian dài, nó có thể chỉ ra sự giảm cung cấp oxy đến các mô và cơ quan trong cơ thể."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "low_spo2",
+      "patterns": [
+        "low_spo2"
+      ],
+      "responses": [
+        "Đây là mức SpO2 thấp và cho thấy sự thiếu oxy trong máu. Người có mức SpO2 này có thể trải qua các triệu chứng như khó thở, mệt mỏi và mất năng lượng."
+      ],
+      "context_set": ""
     }
   ]
 }
