@@ -45,9 +45,9 @@ async def get_response(message: str):
         spo2_message = getSpO2Type(spo2)
 
         pred_intents = chatbot.predict_class(hr_message)
-        hr_res = get_response(pred_intents, intents)
+        hr_res = chatbot.get_response(pred_intents, intents)
         pred_intents = chatbot.predict_class(spo2_message)
-        spo2_res = get_response(pred_intents, intents)
+        spo2_res = chatbot.get_response(pred_intents, intents)
 
         resp = hr_res + '\n' + spo2_res
     else:
