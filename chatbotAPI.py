@@ -31,6 +31,7 @@ async def get_response(message: str):
         txts = message.split(' ')
         heart_rate = int(txts[0][4:])
         message = getHeartRateType(heart_rate)
+
     pred_intent = chatbot.predict_class(message)
     resp = chatbot.get_response(pred_intent, intents)
     return {"response": resp}
