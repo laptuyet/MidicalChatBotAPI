@@ -99,26 +99,26 @@ def getSpO2Type(spo2):
     else:
         return 'low_spo2'
 
-stop = False
-while not stop:
-    message = input("Enter message: ")
-    if message in ['end', 'stop']:
-        stop = True
-    else:
-        flag = message.__contains__('BPM') and message.__contains__('SPO2')
-        if flag:
-            txts = message.split(' ')
-            heart_rate = int(txts[0][4:])
-            spo2 = int(txts[1][5:])
-            hr_message = getHeartRateType(heart_rate)
-            spo2_message = getSpO2Type(spo2)
-
-            pred_intents = predict_class(hr_message)
-            hr_res = get_response(pred_intents, intents)
-            pred_intents = predict_class(spo2_message)
-            spo2_res = get_response(pred_intents, intents)
-            print(hr_res + '\n' + spo2_res)
-        else:
-            pred_intents = predict_class(message)
-            res = get_response(pred_intents, intents)
-            print(res)
+# stop = False
+# while not stop:
+#     message = input("Enter message: ")
+#     if message in ['end', 'stop']:
+#         stop = True
+#     else:
+#         flag = message.__contains__('BPM') and message.__contains__('SPO2')
+#         if flag:
+#             txts = message.split(' ')
+#             heart_rate = int(txts[0][4:])
+#             spo2 = int(txts[1][5:])
+#             hr_message = getHeartRateType(heart_rate)
+#             spo2_message = getSpO2Type(spo2)
+#
+#             pred_intents = predict_class(hr_message)
+#             hr_res = get_response(pred_intents, intents)
+#             pred_intents = predict_class(spo2_message)
+#             spo2_res = get_response(pred_intents, intents)
+#             print(hr_res + '\n' + spo2_res)
+#         else:
+#             pred_intents = predict_class(message)
+#             res = get_response(pred_intents, intents)
+#             print(res)
